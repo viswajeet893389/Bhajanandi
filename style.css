@@ -311,6 +311,7 @@ header .master_play #currentStart{
   display: flex;
   align-items: center;
   margin: 0px 0px 0px 20px;
+  position: relative;
 }
 
 header .master_play .bar{
