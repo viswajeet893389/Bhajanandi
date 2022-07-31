@@ -160,8 +160,11 @@
     }
 
     
-    header .master_play #title{
-        margin-left: 5px;
+    header .master_play #title, #poster_master_play{
+        display: none;
+    }
+    header .master_play .bar, #currentStart, #currentEnd{
+        right: 30px;
     }
 }
 
@@ -177,6 +180,7 @@
     header .song_side .popular_song{
         margin: -42px;
     }
+    
 }
 
 @media screen and (max-width: 412px){
@@ -197,7 +201,8 @@
 
 }
 
-header .master_play .wave {
-    right: 48% !important;
+@media screen and (max-width: 390px){
+    header .master_play .wave {
+        right: 48% !important;
+    }
 }
-
