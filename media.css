@@ -130,7 +130,7 @@
     header .master_play .icon{
         position: absolute;
         top: -46px;
-        right: 30%;
+        right: 28%;;
     }
     header .master_play .icon::before{
         content: '';
@@ -166,6 +166,10 @@
     header .master_play .bar, #currentStart, #currentEnd{
         right: 30px;
     }
+
+    ::placeholder {
+        font-size: 11px;
+      }
 }
 
 @media screen and (max-width: 470px){
@@ -193,7 +197,7 @@
     }
 
     header .master_play .wave{
-        right: 45% !important;
+        right: 44% !important;
     }
     header .menu_side{
         width: 80% !important;
