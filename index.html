@@ -102,7 +102,7 @@
         </ul>
         <div class="search">
           <i class="bi bi-search"></i>
-          <input type="text" placeholder="Search bhajan...">
+          <input type="text" name="Search" placeholder="Search bhajan...">
           <div class="search_results">
             <!-- <a href="" class="card">
               <img src="img/Madhavas.jpg" alt="">
@@ -941,9 +941,12 @@
   let menu_list_active_button = document.getElementById('menu_list_active_button');
     let menu_side = document.getElementsByClassName('menu_side')[0];
     var w = window.innerWidth;
-    
+
     if(w<=1000){
       menu_list_active_button.style.opacity = '1';
+    }
+    if(w<=680){
+      document.getElementsByName('Search')[0].placeholder='Search';
     }
     menu_list_active_button.addEventListener('click', ()=> {
         menu_side.style.transform = "unset";
