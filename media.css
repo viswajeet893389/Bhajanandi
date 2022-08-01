@@ -150,7 +150,7 @@
         top: -90px;
         width: 40px;
         height: 40px;
-        right: 44%;
+        right: 43%;
     }
 
     header .master_play .wave .wave1{
@@ -190,6 +190,9 @@
         top: -46px;
         right: 30%;
     }
+    header .master_play .wave {
+        right: 45% !important;
+    }
     
 }
 
@@ -213,11 +216,14 @@
         top: -46px;
         right: 28%;
     }
+    header .master_play .wave {
+        right: 43% !important;
+    }
 
 }
 
 @media screen and (max-width: 390px){
     header .master_play .wave {
-        right: 48% !important;
+        right: 45% !important;
     }
 }
