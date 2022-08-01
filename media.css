@@ -127,11 +127,12 @@
     header .master_play{
         z-index: 999;
     }
-    header .master_play .icon{
+    header .master_play .icon {
         position: absolute;
         top: -46px;
-        right: 28%;;
+        right: 33%;
     }
+    
     header .master_play .icon::before{
         content: '';
         position: absolute;
@@ -172,7 +173,7 @@
       }
 }
 
-@media screen and (max-width: 470px){
+@media screen and (max-width: 500px){
     header .song_side nav .search{
         width: 150px;
         margin-right: 5px;
@@ -184,10 +185,15 @@
     header .song_side .popular_song{
         margin: -42px;
     }
+    header .master_play .icon {
+        position: absolute;
+        top: -46px;
+        right: 30%;
+    }
     
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 450px){
     header .song_side nav ul li{
         font-size: 10px !important;
         margin-right: 7px !important;
@@ -201,6 +207,11 @@
     }
     header .menu_side{
         width: 80% !important;
+    }
+    header .master_play .icon {
+        position: absolute;
+        top: -46px;
+        right: 28%;
     }
 
 }
