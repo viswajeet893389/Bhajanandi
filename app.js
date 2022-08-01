@@ -142,7 +142,7 @@ const songs = [
     {
         id: 21,
         poster: 'img/SDD.png',
-        songName: 'Sri Gurvashtakambr> <div class="subtitle">Swarupa Damodar Prabhu</div>',
+        songName: 'Sri Gurvashtakam <div class="subtitle">Swarupa Damodar Prabhu</div>',
         songSrc:   'audio/SDD/Samsara davanala (iskcon morning aarti) __.mp3',
     },
     {
@@ -544,6 +544,7 @@ const songs = [
 
 
 //search data start
+
 let search_results = document.getElementsByClassName('search_results')[0];
 
 let card;
@@ -551,13 +552,14 @@ songs.forEach(element => {
     const{id, songName, poster} = element;
     card = document.createElement('a');
     card.classList.add('card');
-    card.href = "#" + id; 
+    // card.href = "#" + id; 
     card.innerHTML = `<img src="${poster}">
     <div class="content">
       ${songName}
     </div>`;
 
     search_results.appendChild(card);
+    
 });
 
 
@@ -578,20 +580,45 @@ input.addEventListener('keyup', ()=>{
         }
 
         if(input.value == 0){
-            search_results.style.display = "none"
+            search_results.style.display = "none";
         } else {
-            search_results.style.display = ""
+            search_results.style.display = "";
         }
         items[i].addEventListener("mouseover", el => {
-            Array.from(document.getElementsByClassName('songItem'))[i].style.background = "rgb(105, 105, 105, 0.2)";
+            Array.from(document.getElementsByClassName('songItem'))[i].style.background = "#010f32";
+            Array.from(document.getElementsByClassName('songItem'))[i].style.border = "1px solid white" ;
         });
 
         items[i].addEventListener("mouseout", el => {
             Array.from(document.getElementsByClassName('songItem'))[i].style.background = "";
+            Array.from(document.getElementsByClassName('songItem'))[i].style.border = "" ;
         });
+        items[i].addEventListener("click", () => {
+            let el = Array.from(document.getElementsByClassName('songItem'))[i];
+            scrollTo(el);
+        });
+        
     }
 });
 
+document.getElementsByClassName('song_side')[0].addEventListener("click", () => {
+    search_results.style.display = "none";
+});
+document.getElementsByName('Search')[0].addEventListener("focus", () => {
+    search_results.style.display = "block";
+});
+
+function scrollTo (el) {
+    const elLeft = el.offsetLeft + el.offsetWidth;
+    const elParentLeft = el.parentNode.offsetLeft + el.parentNode.offsetWidth;
+  
+    // check if element not in view
+    if (elLeft >= elParentLeft + el.parentNode.scrollLeft) {
+      el.parentNode.scrollLeft = elLeft - elParentLeft;
+    } else if (elLeft <= el.parentNode.offsetLeft + el.parentNode.scrollLeft) {
+      el.parentNode.scrollLeft = el.offsetLeft - el.parentNode.offsetLeft;
+    }
+  }
 //search data end
 
 
@@ -689,14 +716,14 @@ masterPlay.addEventListener('click', playPause);
             masterPlay.classList.remove('bi-play-fill');
             Array.from(document.getElementsByClassName('playListPlay'))[index].classList.remove('bi-play-circle-fill');
             Array.from(document.getElementsByClassName('playListPlay'))[index].classList.add('bi-pause-circle-fill');
-            ply.innerHTML = "PAUSE"
+            ply.innerHTML = "PAUSE";
         } else{
             music.pause();
             wave.classList.remove('active1');
             masterPlay.classList.add('bi-play-fill');
             masterPlay.classList.remove('bi-pause-fill');
             makeAllPlays();
-            ply.innerHTML = "PLAY"
+            ply.innerHTML = "PLAY";
         }
     }
 const makeAllBackground = () => {
@@ -863,11 +890,11 @@ const next_music = () => {
 
     songChange();
     playPause();
-}
+};
 
 const repeat_music = () => {
     playPause();
-}
+};
 
 const random_music = () => {
     index = Math.floor(Math.random() * songs.length);
@@ -875,7 +902,7 @@ const random_music = () => {
     songChange();
     playPause();
 
-}
+};
 
 //What will happen when the music will end - next, repeat, shuffle
 
