@@ -227,3 +227,11 @@
         right: 46% !important;
     }
 }
+
+/* MOBILE KEYBOARD IS OPEN */
+@media only screen and (max-width: 430px) and (max-height:400px){
+    input:focus{
+        position: fixed;
+        top:50px;
+    }
+}
