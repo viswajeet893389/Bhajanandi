@@ -1,3 +1,7 @@
+body {
+    --keyboard-zindex: 1000000000000000000000000000000000000000;
+}
+
 @media screen and (min-width: 1450px){
     header{
         width: 88%;
@@ -226,8 +230,4 @@
     header .master_play .wave {
         right: 46% !important;
     }
-}
-
-@media (max-width:550px) { 
-    body.when-keyboard-showing .header { height:0; padding:0; }
 }
