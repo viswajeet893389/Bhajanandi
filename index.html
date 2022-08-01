@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
     
     <title>Bhajan Player</title>
 
@@ -103,7 +104,7 @@
         </ul>
         <div class="search">
           <i class="bi bi-search"></i>
-          <input type="text" name="Search" placeholder="Search bhajan...">
+          <input type="text" id="search" name="Search" placeholder="Search bhajan...">
           <div class="search_results">
             <!-- <a href="" class="card">
               <img src="img/Madhavas.jpg" alt="">
@@ -954,8 +955,8 @@
         menu_list_active_button.style.opacity = 0;
     });
     
-    let song_side = document.getElementsByClassName('song_side')[0];
-    song_side.addEventListener('click', ()=> {
+    let song_sides = document.getElementsByClassName('song_side')[0];
+    song_sides.addEventListener('click', ()=> {
       if(w <= 1000){
         menu_side.style.transform = "translateX(-100%)";
         menu_list_active_button.style.opacity = 1;
