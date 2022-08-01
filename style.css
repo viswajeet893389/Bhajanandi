@@ -436,33 +436,33 @@ header .song_side::before{
   left: 75%;
   width: 40%;
   height: 40%;
-  /* background: url('img/K11.png'); */
+  /* background: url('img/K12.png'); */
   animation:change_img 100s linear infinite;
   animation-timing-function: cubic-bezier(0.14, 0.87, 0.05, 0.95);
   /* background-repeat: no-repeat; */
   z-index: -1;
 }
 
-@keyframes change_img {
+ @keyframes change_img {
   0%{
     background: url('img/K3.png');
     background-repeat: no-repeat;
   }
   10%{
-    background: url('img/K3.png');
+    background: url('img/K2.png');
     background-repeat: no-repeat;
     
   }
   20%{
-    background: url('img/K2.png');
-    background-repeat: no-repeat;
-  }
-  30%{
     background: url('img/K1.png');
     background-repeat: no-repeat;
   }
-  40%{
+  30%{
     background: url('img/K4.png');
+    background-repeat: no-repeat;
+  }
+  40%{
+    background: url('img/K12.png');
     background-repeat: no-repeat;
   }
   50%{
@@ -489,7 +489,7 @@ header .song_side::before{
     background: url('img/K10.png');
     background-repeat: no-repeat;
   }
-}
+} 
 header .song_side nav{
   width: 90%;
   height: 10%;
@@ -559,8 +559,9 @@ header .song_side nav .search .search_results {
   margin-top: 10px;
   border-radius: 10px;
   overflow: auto;
-
 }
+
+
 
 header .song_side nav .search .search_results .card{
   width: 100%;
@@ -574,7 +575,7 @@ header .song_side nav .search .search_results .card{
   padding: 0;
   display: none;
   cursor: pointer;
-   
+  z-index: 99999999;
 }
 
 header .song_side nav .search .search_results .card:hover{
@@ -773,9 +774,8 @@ header .song_side .popular_song .pop_song li .img_play{
   position: realtive;
   width: 100px;
   height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
+  
 }
 
 header .song_side .popular_song .pop_song li .img_play img{
@@ -785,11 +785,13 @@ header .song_side .popular_song .pop_song li .img_play img{
 
 header .song_side .popular_song .pop_song li .img_play .bi{
   position: relative;
-  right: 60px;
+  right: -38px;
+  bottom: 66px;
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s linear;
   opacity: 0;
+  
 }
 
 header .song_side .popular_song .pop_song li:hover .img_play .bi{
