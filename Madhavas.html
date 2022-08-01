@@ -3,16 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Bhajan Player</title>
-    <style>
-        header .song_side::before{
-            background: url(img/Madhavas.jpg);
-        }
-    </style>
 
     <!-- Poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +17,7 @@
   <body>
   <header>
     <div class="menu_side">
+      <h6 id="menu_list_active_button"><i class="bi bi-music-note-list"></i></h6>
       <h1>Playlist</h1>
       <div class="playlist">
       <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Playlist  </h4>
@@ -84,6 +80,14 @@
         <div class="subtitle">Agnideva Das</div></h5>
         <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
       </li>
+
+      <li class="songItem">
+        <span>08</span>
+        <img src="img/Agnideva_Pr.jpg" alt="Image not showing">
+        <h5>Parama Karuna<br> 
+        <div class="subtitle">Agnideva Das</div></h5>
+        <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+      </li>
       
     </div>
       
@@ -98,21 +102,70 @@
         </ul>
         <div class="search">
           <i class="bi bi-search"></i>
-          <input type="text" placeholder="Search bhajan...">
+          <input type="text" name="Search" placeholder="Search bhajan...">
+          <div class="search_results">
+            <!-- <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a>
+            
+            <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a>
+
+            <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a>
+
+            <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a>
+
+            <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a>
+
+            <a href="" class="card">
+              <img src="img/Madhavas.jpg" alt="">
+              <div class="content">
+                Govind Bolo
+                <div class="subtitle">Madhavas</div>
+              </div>
+            </a> -->
+          </div>
         </div>
         <div class="user">
           <img src="img/v.jpg">
         </div>
       </nav>
       <div class="content">
-        <h1>Madhavas Rock Band</h1>
-        <p>Ohe Vaishnav Thakur doyera sagara</p>
+        <div id="Kirtaniya">Govind Bolo
+          <div class="subtitle">Madhavas</div>
+        </div>
         <div class="buttons">
-          <button>Play</button>
-          <button>FOLLOW</button>
+          <button id="ply">PLAY</button>
+          <span><i class="bi bi-heart" id="Like"></i></span>
         </div>
       </div>
-
       <div class="popular_song">
         <div class="h4">
           <h4>Poplular Songs</h4>
@@ -122,16 +175,7 @@
           </div>
         </div>
         <div class="pop_song">
-          <li class="songItem">
-            <div class="img_play">
-              <img src="img/little krishna.jpg" alt="">
-              <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
-            </div>
-            <h5>Hi Bro<br> 
-            <div class="subtitle">Agnideva Das</div></h5>
-            
-          </li>
-
+          
           <li class="songItem">
             <div class="img_play">
               <img src="img/little krishna.jpg" alt="Image not showing">
@@ -209,7 +253,6 @@
             </div>
             <h5>On my way <br> 
             <div class="subtitle">Alan walker</div></h5>
-            
           </li>
 
           <li class="songItem">
@@ -231,7 +274,570 @@
             <div class="subtitle">Alan walker</div></h5>
             
           </li>
+
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="21"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="22"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="23"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="24"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="25"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="26"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="27"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="28"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="28"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="29"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="30"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="31"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="32"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="33"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="34"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="35"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="36"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="37"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="38"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="39"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="40"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="41"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="42"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="43"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="44"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="45"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="46"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="47"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="48"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="49"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="50"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="51"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="52"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="53"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="54"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="55"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="56"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="57"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+          <li class="songItem">
+            <div class="img_play">
+              <img src="img/little krishna.jpg" alt="">
+              <i class="bi playListPlay bi-play-circle-fill" id="58"></i>
+            </div>
+            <h5>On my way <br> 
+            <div class="subtitle">Alan walker</div></h5>
+            
+          </li>
+
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="59"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="60"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="61"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="62"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="63"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="64"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="65"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="66"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="67"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="68"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="69"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="70"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="71"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="72"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="73"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="74"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="75"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="76"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="77"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+        <li class="songItem">
+          <div class="img_play">
+            <img src="img/little krishna.jpg" alt="">
+            <i class="bi playListPlay bi-play-circle-fill" id="78"></i>
+          </div>
+          <h5>On my way <br> 
+          <div class="subtitle">Alan walker</div></h5>
+          
+        </li>
+      </li>
+      <li class="songItem">
+        <div class="img_play">
+          <img src="img/little krishna.jpg" alt="">
+          <i class="bi playListPlay bi-play-circle-fill" id="79"></i>
         </div>
+        <h5>On my way <br> 
+        <div class="subtitle">Alan walker</div></h5>
+        
+      </li>
+        
+      </div>
       </div>
       <div class="popular_artists">
         <div class="h4">
@@ -243,7 +849,7 @@
         </div>
       <div class="item">
         <li>
-          <img src="img/little krishna.jpg" alt="Not showing">
+          <a href="Madhavas.html"><img src="img/Madhavas.jpg" alt="Not showing"></a>
         </li>
         <li>
           <img src="img/little krishna.jpg" alt="Not showing">
@@ -330,6 +936,32 @@
         </div>
     </div>
   </header>
-  <script src="Madhavas.js"></script>
+  <script src="app.js"></script>
+  <script>
+  let menu_list_active_button = document.getElementById('menu_list_active_button');
+    let menu_side = document.getElementsByClassName('menu_side')[0];
+    var w = window.innerWidth;
+
+    if(w<=1000){
+      menu_list_active_button.style.opacity = '1';
+    }
+    if(w<=680){
+      document.getElementsByName('Search')[0].placeholder='Search';
+    }
+    menu_list_active_button.addEventListener('click', ()=> {
+        menu_side.style.transform = "unset";
+        menu_list_active_button.style.opacity = 0;
+    });
+    
+    let song_side = document.getElementsByClassName('song_side')[0];
+    song_side.addEventListener('click', ()=> {
+      if(w <= 1000){
+        menu_side.style.transform = "translateX(-100%)";
+        menu_list_active_button.style.opacity = 1;
+      }
+
+        
+    });
+    </script>
   </body>
 </html>
