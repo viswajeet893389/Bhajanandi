@@ -1,13 +1,8 @@
-body {
-    --keyboard-zindex: 1000000000000000000000000000000000000000;
-}
-
 @media screen and (min-width: 1450px){
     header{
         width: 88%;
     }
 }
-
 
 @media screen and (max-width: 1450px){
     header .menu_side .menu_song li h5{
