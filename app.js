@@ -1,7 +1,3 @@
-const music = new Audio('audio/Madhavas/GOVIND BOLO.mp3');
-    // music.play();
-    
-
 const songs = [
     {
         id: 1,
@@ -542,6 +538,95 @@ const songs = [
     },
 ];
 
+//Recommended menu start
+const menu_songs = [
+    {
+        id: 1,
+        poster: 'img/Madhavas.jpg',
+        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
+        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
+    },
+    {
+        id: 2,
+        poster: 'img/Madhavas.jpg',
+        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
+        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
+    },
+    {
+        id: 3,
+        poster: 'img/Madhavas.jpg',
+        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
+        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
+    },
+    {
+        id: 4,
+        poster: 'img/Madhavas.jpg',
+        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
+        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
+    },
+    {
+        id: 5,
+        poster: 'img/Madhavas.jpg',
+        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
+        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
+    },
+    {
+        id: 6,
+        poster: 'img/Madhavas.jpg',
+        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
+        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
+    },
+    {
+        id: 7,
+        poster: 'img/Madhavas.jpg',
+        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
+        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
+    },
+    {
+        id: 8,
+        poster: 'img/Madhavas.jpg',
+        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
+        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
+    },]
+
+
+var rand_arr = [];
+while(rand_arr.length < 8){
+    var r = Math.floor(Math.random() * songs.length);
+    if(r>=8 && (rand_arr.indexOf(r) === -1)) rand_arr.push(r);
+}       // for producing 8 random unique numbers between 0 and songs.length
+console.log(rand_arr);
+// for making menu_side songs random songs
+let j=0;
+Array.from(document.getElementsByClassName('songItem')).forEach((e,i) => {
+    if(i<8){
+        e.getElementsByTagName('img')[0].src = songs[rand_arr[j]].poster;
+        e.getElementsByTagName('h5')[0].innerHTML = songs[rand_arr[j]].songName;
+        menu_songs[j].poster = songs[rand_arr[j]].poster;
+        menu_songs[j].songName = songs[rand_arr[j]].songName;
+        menu_songs[j].songSrc = songs[rand_arr[j]].songSrc;
+        j++;
+    }
+});
+
+for (let k = 0; k < 8; k++) {
+    songs[k].poster = menu_songs[k].poster;
+    songs[k].songName = menu_songs[k].songName;
+    songs[k].songSrc = menu_songs[k].songSrc;
+    
+}
+
+//Recommended menu end
+
+
+
+//initilization of songs
+const music =  new Audio(songs[0].songSrc);
+document.getElementById('poster_master_play').src = songs[0].poster;  
+document.getElementById('Kirtaniya').innerHTML = songs[0].songName;
+document.getElementById('title').innerHTML = songs[0].songName;
+ 
+
 
 //search data start
 
@@ -557,6 +642,7 @@ songs.forEach(element => {
     <div class="content">
       ${songName}
     </div>`;
+    
 
     search_results.appendChild(card);
     
@@ -569,7 +655,7 @@ input.addEventListener('keyup', ()=>{
     let input_value = input.value.toUpperCase();
     let items = search_results.getElementsByTagName('a');
 
-    for (let i = 0; i < items.length; i++) {
+    for (let i = 8; i < items.length; i++) {
         let as = items[i].getElementsByClassName('content')[0];
         let text_value = as.textContent || as.innerHTML;
 
@@ -650,24 +736,37 @@ function Like_toggle(){
         Like.style.color = "red";
         Like.classList.remove('bi-heart');
         arrLike[index] = "LIKED";
+
+        if(index<8){
+        arrLike[rand_arr[index]] = "LIKED";
+     } else {
+        arrLike[rand_arr.indexOf(index)] = "LIKED";
+     } 
     } else {
         Like.classList.remove('bi-heart-fill');
         Like.classList.add('bi-heart');
         arrLike[index] = "LIKE";
         Like.style.color = "#798298";
+
+        if(index<8){
+            arrLike[rand_arr[index]] = "LIKE";
+         } else {
+            arrLike[rand_arr.indexOf(index)] = "LIKE";
+         } 
     }
 }
 
 function Like_SongChanged(){
-    if(arrLike[index] == "LIKED"){
-        Like.classList.add('bi-heart-fill');
-        Like.classList.remove('bi-heart');
-        Like.style.color = "red";
-    } else {
-        Like.classList.remove('bi-heart-fill');
-        Like.classList.add('bi-heart');
-        Like.style.color = "#798298";
-    }
+
+        if(arrLike[index] == "LIKED"){
+            Like.classList.add('bi-heart-fill');
+            Like.classList.remove('bi-heart');
+            Like.style.color = "red";
+        } else {
+            Like.classList.remove('bi-heart-fill');
+            Like.classList.add('bi-heart');
+            Like.style.color = "#798298";
+        }
 }
 //Like Button End
 
@@ -954,8 +1053,12 @@ pop_art_left.addEventListener('click', ()=>{
 });
 
 
-
 Array.from(document.getElementsByClassName('songItem')).forEach((e,i) => {
+    if(i>=8){
     e.getElementsByTagName('img')[0].src = songs[i].poster;
     e.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
+    }
 });
+
+
+
