@@ -1,12 +1,17 @@
-@media screen and (max-height: 500px){
+@media screen and (max-height: 550px){
 
     .song_side .buttons {
-        visibility: hidden !important; 
+        visibility: hidden !important;
+        transition: none !important; 
     }
     header .song_side::before{
         display: none !important;
+        transition: none !important; 
         }
-
+    header .song_side nav .search .search_results{
+        background: #0c111f;
+        }
+    
 }
 
 
