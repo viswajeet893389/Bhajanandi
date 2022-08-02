@@ -964,9 +964,9 @@
       } 
     });
 
-    if(w<=500 && h<=500){
+    if(h<=450){
       document.getElementsByClassName('buttons')[0].style.visibility = "hidden";
-    } else{
+    } else if(h>450){
       document.getElementsByClassName('buttons')[0].style.display = "visible";
 
     }
