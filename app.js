@@ -603,6 +603,7 @@ input.addEventListener('keyup', ()=>{
 
 document.getElementsByClassName('song_side')[0].addEventListener("click", () => {
     search_results.style.display = "none";
+    
 });
 document.getElementsByName('Search')[0].addEventListener("focus", () => {
     search_results.style.display = "block";
