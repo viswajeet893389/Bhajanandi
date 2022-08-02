@@ -1,8 +1,21 @@
+@media screen and (max-height: 500px){
+
+    .song_side .buttons {
+        visibility: hidden !important; 
+    }
+    header .song_side::before{
+        display: none !important;
+        }
+
+}
+
+
 @media screen and (min-width: 1450px){
     header{
-        width: 88%;
+        width: 88% !important;
     }
 }
+
 
 @media screen and (max-width: 1450px){
     header .menu_side .menu_song li h5{
@@ -225,4 +238,11 @@
     header .master_play .wave {
         right: 46% !important;
     }
+}
+
+.buttons_hide{
+    visibility: hidden;
+}
+.buttons_show{
+    visibility: visible;
 }
