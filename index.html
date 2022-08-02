@@ -942,8 +942,7 @@
   <script>
   let menu_list_active_button = document.getElementById('menu_list_active_button');
     let menu_side = document.getElementsByClassName('menu_side')[0];
-    var w = window.innerWidth;
-    var h = window.innerHeight;
+    let w = window.innerWidth;
 
     if(w<=1000){
       menu_list_active_button.style.opacity = '1';
@@ -961,22 +960,10 @@
       if(w <= 1000){
         menu_side.style.transform = "translateX(-100%)";
         menu_list_active_button.style.opacity = 1;
+       
       } 
     });
 
-    if(h<=500){
-      document.getElementsByClassName('buttons')[0].style.visibility = "hidden";
-    } else if(h>500){
-      document.getElementsByClassName('buttons')[0].style.display = "visible";
-
-      window.addEventListener('click', ()=>{
-        document.getElementsByClassName('buttons')[0].style.display = "visible";
-      
-      });
-      document.getElementsByClassName('song_side')[0].addEventListener("click", () => {
-        document.getElementsByClassName('buttons')[0].style.display = "visible";
-      });
-    }
 
     </script>
 
