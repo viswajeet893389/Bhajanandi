@@ -44,6 +44,7 @@ header .master_play{
   /* border: 1px solid #fff; */
   background: #0b1320;
   box-shadow: 0px 3px 8px #090f1f;
+  z-index: 1000000000;
 }
 
 
@@ -182,6 +183,7 @@ header .master_play .wave{
   padding-bottom: 5px;
   display: flex;
   align-items: flex-end;
+  margin: auto 0;
   margin-right: 10px;
 
 }
@@ -970,4 +972,12 @@ header .right_bx1 h3{
 
 .songItem{
   overflow: hidden;
+}
+header .master_play #title{
+  margin: auto 0;
+
+}
+header .master_play #poster_master_play{
+  margin: auto 0;
+  margin-right: 8px;
 }
