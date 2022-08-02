@@ -964,12 +964,20 @@
       } 
     });
 
-    if(h<=450){
+    if(h<=500){
       document.getElementsByClassName('buttons')[0].style.visibility = "hidden";
-    } else if(h>450){
+    } else if(h>500){
       document.getElementsByClassName('buttons')[0].style.display = "visible";
 
+      window.addEventListener('click', ()=>{
+        document.getElementsByClassName('buttons')[0].style.display = "visible";
+      
+      });
+      document.getElementsByClassName('song_side')[0].addEventListener("click", () => {
+        document.getElementsByClassName('buttons')[0].style.display = "visible";
+      });
     }
+
     </script>
 
 
