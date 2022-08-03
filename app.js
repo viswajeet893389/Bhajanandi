@@ -42,7 +42,7 @@ const songs = [
     {
         id: 7,
         poster: "img/Agam Aggarwal.jpg",
-        songName: 'Madhurashtakam - Adharam Madhuram<br> <div class="subtitle">Agnideva Das</div></h5>',
+        songName: 'Madhurashtakam - Adharam Madhuram<br> <div class="subtitle">Agam Aggarwal</div></h5>',
         songSrc: 'audio/Others/Agam - Madhurashtakam _ Adharam Madhuram _ Krishna Janmashtami _ POPULAR NEW KRISHNA BHAJAN.mp3',
  
     },
@@ -157,36 +157,36 @@ const songs = [
     {
         id: 24,
         poster: "img/Madhavas.jpg",  
-        songName: 'Hare Krishna Mantra-Kuruksetra<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Hare Krishna Mantra-Vrindavan<br> <div class="subtitle">Madhavas</div>',
         songSrc: 'audio/Madhavas/HEART TOUCHING _ MAHA MANTRA _ BEAUTIFUL VRINDAVAN DARSHAN _ HARE KRISHNA KIRTAN - Madhavas Band.mp3',
  
     },
     {
         id: 25,
         poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Hari Hari biphale janama goainu<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Mahamantra Beautiful Chant<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
 
     },
     {
         id: 26,
-        poster: "img/Agnideva_Pr.jpg", 
-        songName: 'Kirtans From The Sacred Forest <br> <div class="subtitle">Agnideva Das</div>',
-        songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
+        poster: 'img/Amogh Lila Prabhu.jpg',  
+        songName: 'Messiah of Millenium<br> <div class="subtitle">Amogh Lila Prabhu</div></div>',
+        songSrc: 'audio/Madhavas/Song of Gratitude __ HG Amogh Lila Prabhu __ On 125th Birth Anniversary of Shrila Prabhupada.mp3#t=00:00:05',
   
     },
     {
         id: 27,
-        poster: "img/Agnideva_Pr.jpg",
-        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Das</div></h5>',
-        songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
+        poster: "img/Agam Aggarwal.jpg",
+        songName: 'Madhurashtakam - Adharam Madhuram<br> <div class="subtitle">Agam Aggarwal</div></h5>',
+        songSrc: 'audio/Others/Agam - Madhurashtakam _ Adharam Madhuram _ Krishna Janmashtami _ POPULAR NEW KRISHNA BHAJAN.mp3',
  
     },
     {
         id: 28,
-        poster: "img/Madhavas.jpg",
-        songName: 'Tera Ramji Karenge<br> <div class="subtitle">Madhavas</div></h5>',
-        songSrc: 'audio/Madhavas/तेरा राम जी करेंगे - इस भजन में छिपा है जीने का रहस्य - Madhavas Rock Band.mp3',
+        poster: 'img/Madhavas.jpg',
+        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
+        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
   
     },
 
@@ -198,123 +198,123 @@ const songs = [
     },
     {
         id: 30,
-        poster: 'img/Niranjan Swami.jpg',
-        songName: 'Bhajahu Re Mana<br> <div class="subtitle">Niranjan Swami</div>',
-        songSrc:   'audio/Niranjan Swami/Bhajahu Re Mana.mp3',
+        poster: 'img/Radha Raman.png',
+        songName: 'Radha Raman Hari<br> <div class="subtitle">Unknown</div>',
+        songSrc:   'audio/Others/Radha Raman Hari Govind.mp3',
     },
 
     {
         id: 31,
-        poster: 'img/Madhavas.jpg',
-        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
-        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
+        poster: 'img/RSP.png',
+        songName: 'Vrindavana Vasi<br> <div class="subtitle">Radheshyam Prahu</div>',
+        songSrc:   'audio/RSP/Vrindavana Vasi Jata Vaisnavera.mp3',
     },
     {
         id: 32,
-        poster: 'img/Agnideva_Pr.jpg',  
-        songName: 'Bol Hari Bol<br> <div class="subtitle">Agnideva Das</div></div>',
-        songSrc: 'audio/Agnideva/Bol Hari Bol.mp3',
+        poster: 'img/SDD.png',  
+        songName: 'Jaya Radhe Jaya Krishna<br> <div class="subtitle">Swarupa Damodar Prabhu</div>',
+        songSrc: 'audio/SDD/Jaya Radhe Jaya Krishna _ Swarupa Damodar Dasa.mp3',
     },
     {
         id: 33,
         poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Mahamantra_Beautiful Chant<br> <div class="subtitle">Agnideva Das</div>',
-        songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
+        songName: 'Hare Krishna Mantra-Kuruksetra<br> <div class="subtitle">Agnideva Prabhu</div>',
+        songSrc: 'audio/Agnideva/Hare Krishna Mantra-Kuruksetra.mp3',
         
     },
     {
         id: 34,
-        poster: "img/Madhavas.jpg",  
-        songName: 'Hare Krishna Mantra-Kuruksetra<br> <div class="subtitle">Agnideva Das</div>',
-        songSrc: 'audio/Madhavas/HEART TOUCHING _ MAHA MANTRA _ BEAUTIFUL VRINDAVAN DARSHAN _ HARE KRISHNA KIRTAN - Madhavas Band.mp3',
+        poster: "img/Niranjan Swami.jpg",  
+        songName: 'Jaya Radha Madhava<br> <div class="subtitle">HH Niranjan Swami</div>',
+        songSrc: 'audio/Niranjan Swami/Jaya Radha-Madhava.mp3',
  
     },
     {
         id: 35,
-        poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Hari Hari biphale janama goainu<br> <div class="subtitle">Agnideva Das</div>',
-        songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
+        poster: "img/CM.png",  
+        songName: 'Gora Pahu Na Bhajiya Mainu<br> <div class="subtitle">Ananta Nitai Prabhu</div>',
+        songSrc: 'audio/Others/Gora Pahu Na Bhajiya Mainu _ Ananta Nitai Prabhu _ Vaishnava Bhajan.mp3',
 
     },
     {
         id: 36,
-        poster: "img/Agnideva_Pr.jpg", 
-        songName: 'Kirtans From The Sacred Forest <br> <div class="subtitle">Agnideva Das</div>',
-        songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
+        poster: "img/SP.jpg", 
+        songName: 'Govinda jaya jaya <br> <div class="subtitle">Srila Prabhupada</div>',
+        songSrc: 'audio/SP/Srila Prabhupada - Govinda jaya jaya.mp3',
   
     },
     {
         id: 37,
         poster: "img/Agnideva_Pr.jpg",
-        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Das</div></h5>',
-        songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
+        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Prabhu</div></h5>',
+        songSrc: 'audio/Agnideva/Parama Karuna-Ft.HG Agnidev Prabhu and Mayuri dasi.mp3',
  
     },
     {
         id: 38,
         poster: "img/Madhavas.jpg",
         songName: 'Tera Ramji Karenge<br> <div class="subtitle">Madhavas</div></h5>',
-        songSrc: 'audio/Madhavas/तेरा राम जी करेंगे - इस भजन में छिपा है जीने का रहस्य - Madhavas Rock Band.mp3',
+        songSrc: 'audio/Madhavas/Tera Ramji Karenge.mp3',
   
     },
 
     {
         id: 39,
-        poster: 'img/Niranjan Swami.jpg',
-        songName: 'Bhajahu Re Mana<br> <div class="subtitle">Niranjan Swami</div>',
-        songSrc:   'audio/Niranjan Swami/Bhajahu Re Mana.mp3',
+        poster: 'img/RSP.png',
+        songName: 'Jaya Jaya Jagannatha<br> <div class="subtitle">Radheshyam Prabhu</div>',
+        songSrc:   'audio/RSP/Jaya Jaya Jagannatha Sacira Nanadan   2.mp3',
     },
     {
         id: 40,
-        poster: 'img/Niranjan Swami.jpg',
-        songName: 'Bhajahu Re Mana<br> <div class="subtitle">Niranjan Swami</div>',
-        songSrc:   'audio/Niranjan Swami/Bhajahu Re Mana.mp3',
+        poster: 'img/SDD.png',
+        songName: 'Mama Mana Mandire<br> <div class="subtitle">Swarupa Damodar Prabhu</div>',
+        songSrc:   'audio/SDD/Mama Mana Mandire _ Vaishnav songs _ Swarupa Damodar Das.mp3',
     },
 
     {
         id: 41,
-        poster: 'img/Madhavas.jpg',
-        songName: 'Govind Bolo<br> <div class="subtitle">Madhavas</div>',
-        songSrc:   'audio/Madhavas/GOVIND BOLO.mp3',
+        poster: 'img/Shivram.jpg',
+        songName: 'Ohe Vaishnav Thakur<br> <div class="subtitle">Shivram Prabhu</div>',
+        songSrc:   'audio/Shivram Pr/Ohe Vaishnav Thakur.mp3',
     },
     {
         id: 42,
-        poster: 'img/Agnideva_Pr.jpg',  
-        songName: 'Bol Hari Bol<br> <div class="subtitle">Agnideva Das</div></div>',
-        songSrc: 'audio/Agnideva/Bol Hari Bol.mp3',
+        poster: 'img/HG NPP.png',  
+        songName: 'Brahma Samhita<br> <div class="subtitle">HG Naam Prem Prabhu</div></div>',
+        songSrc: 'audio/HG Naam Prem Pr/Brahma Samhita.mp3',
     },
     {
         id: 43,
-        poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Mahamantra_Beautiful Chant<br> <div class="subtitle">Agnideva Das</div>',
-        songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
+        poster: "img/Radha Rani.jpg",  
+        songName: 'Radhe Jaya Jaya Madhava<br> <div class="subtitle">Ananda Lila Prabhu</div>',
+        songSrc: 'audio/Others/Radhe Jaya Jaya Madhava Dayite by Srila Rupa Goswami - Ananda Lila Das (Ajay Wadekar).mp3',
         
     },
     {
         id: 44,
         poster: "img/Madhavas.jpg",  
-        songName: 'Hare Krishna Mantra-Kuruksetra<br> <div class="subtitle">Agnideva Das</div>',
-        songSrc: 'audio/Madhavas/HEART TOUCHING _ MAHA MANTRA _ BEAUTIFUL VRINDAVAN DARSHAN _ HARE KRISHNA KIRTAN - Madhavas Band.mp3',
+        songName: 'Yadi Prabhupada Naa Hote<br> <div class="subtitle">Madhavas</div>',
+        songSrc: 'audio/Madhavas/Yadi Prabhupada Naa Hote To Kya Hota - A Tribute - Gurudev Dissapearance Day (Hindi Bhajan) Madhavas.mp3',
  
     },
     {
         id: 45,
         poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Hari Hari biphale janama goainu<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Hari Hari biphale janama goainu<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
 
     },
     {
         id: 46,
         poster: "img/Agnideva_Pr.jpg", 
-        songName: 'Kirtans From The Sacred Forest <br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Kirtans From The Sacred Forest <br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
   
     },
     {
         id: 47,
         poster: "img/Agnideva_Pr.jpg",
-        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Das</div></h5>',
+        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Prabhu</div></h5>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
  
     },
@@ -348,41 +348,41 @@ const songs = [
     {
         id: 52,
         poster: 'img/Agnideva_Pr.jpg',  
-        songName: 'Bol Hari Bol<br> <div class="subtitle">Agnideva Das</div></div>',
+        songName: 'Bol Hari Bol<br> <div class="subtitle">Agnideva Prabhu</div></div>',
         songSrc: 'audio/Agnideva/Bol Hari Bol.mp3',
     },
     {
         id: 53,
         poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Mahamantra_Beautiful Chant<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Mahamantra_Beautiful Chant<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
         
     },
     {
         id: 54,
         poster: "img/Madhavas.jpg",  
-        songName: 'Hare Krishna Mantra-Kuruksetra<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Hare Krishna Mantra-Kuruksetra<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Madhavas/HEART TOUCHING _ MAHA MANTRA _ BEAUTIFUL VRINDAVAN DARSHAN _ HARE KRISHNA KIRTAN - Madhavas Band.mp3',
  
     },
     {
         id: 55,
         poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Hari Hari biphale janama goainu<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Hari Hari biphale janama goainu<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
 
     },
     {
         id: 56,
         poster: "img/Agnideva_Pr.jpg", 
-        songName: 'Kirtans From The Sacred Forest <br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Kirtans From The Sacred Forest <br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
   
     },
     {
         id: 57,
         poster: "img/Agnideva_Pr.jpg",
-        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Das</div></h5>',
+        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Prabhu</div></h5>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
  
     },
@@ -416,41 +416,41 @@ const songs = [
     {
         id: 62,
         poster: 'img/Agnideva_Pr.jpg',  
-        songName: 'Bol Hari Bol<br> <div class="subtitle">Agnideva Das</div></div>',
+        songName: 'Bol Hari Bol<br> <div class="subtitle">Agnideva Prabhu</div></div>',
         songSrc: 'audio/Agnideva/Bol Hari Bol.mp3',
     },
     {
         id: 63,
         poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Mahamantra_Beautiful Chant<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Mahamantra_Beautiful Chant<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
         
     },
     {
         id: 64,
         poster: "img/Madhavas.jpg",  
-        songName: 'Hare Krishna Mantra-Kuruksetra<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Hare Krishna Mantra-Kuruksetra<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Madhavas/HEART TOUCHING _ MAHA MANTRA _ BEAUTIFUL VRINDAVAN DARSHAN _ HARE KRISHNA KIRTAN - Madhavas Band.mp3',
  
     },
     {
         id: 65,
         poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Hari Hari biphale janama goainu<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Hari Hari biphale janama goainu<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
 
     },
     {
         id: 66,
         poster: "img/Agnideva_Pr.jpg", 
-        songName: 'Kirtans From The Sacred Forest <br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Kirtans From The Sacred Forest <br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
   
     },
     {
         id: 67,
         poster: "img/Agnideva_Pr.jpg",
-        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Das</div></h5>',
+        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Prabhu</div></h5>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
  
     },
@@ -484,41 +484,41 @@ const songs = [
     {
         id: 72,
         poster: 'img/Agnideva_Pr.jpg',  
-        songName: 'Bol Hari Bol<br> <div class="subtitle">Agnideva Das</div></div>',
+        songName: 'Bol Hari Bol<br> <div class="subtitle">Agnideva Prabhu</div></div>',
         songSrc: 'audio/Agnideva/Bol Hari Bol.mp3',
     },
     {
         id: 73,
         poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Mahamantra_Beautiful Chant<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Mahamantra_Beautiful Chant<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
         
     },
     {
         id: 74,
         poster: "img/Madhavas.jpg",  
-        songName: 'Hare Krishna Mantra-Kuruksetra<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Hare Krishna Mantra-Kuruksetra<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Madhavas/HEART TOUCHING _ MAHA MANTRA _ BEAUTIFUL VRINDAVAN DARSHAN _ HARE KRISHNA KIRTAN - Madhavas Band.mp3',
  
     },
     {
         id: 75,
         poster: "img/Agnideva_Pr.jpg",  
-        songName: 'Hari Hari biphale janama goainu<br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Hari Hari biphale janama goainu<br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
 
     },
     {
         id: 76,
         poster: "img/Agnideva_Pr.jpg", 
-        songName: 'Kirtans From The Sacred Forest <br> <div class="subtitle">Agnideva Das</div>',
+        songName: 'Kirtans From The Sacred Forest <br> <div class="subtitle">Agnideva Prabhu</div>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
   
     },
     {
         id: 77,
         poster: "img/Agnideva_Pr.jpg",
-        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Das</div></h5>',
+        songName: 'Parama Karuna<br> <div class="subtitle">Agnideva Prabhu</div></h5>',
         songSrc: 'audio/Agnideva/Mahamantra_Beautiful Chant.mp3',
  
     },
