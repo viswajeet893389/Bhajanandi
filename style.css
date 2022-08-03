@@ -657,14 +657,15 @@ header .song_side .content{
 }
 
 header .song_side .content #Kirtaniya {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
-  position: relative;
-  top: -15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 header .song_side .content .subtitle{
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: #798298;
   margin: 5px;
@@ -674,8 +675,6 @@ header .song_side .content .subtitle{
 header .song_side .content .buttons {
   margin-top: 15px;
   visibility: visible;
-  position: relative;
-  top: -15px;
 }
 header .song_side .content .buttons button{
   width: 130px;
