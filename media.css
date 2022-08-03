@@ -138,11 +138,11 @@
 
     header .menu_side{
         width: 60% !important;
-        z-index: 999999999999999;
+        z-index: 999999999999999 !important;
     }
 
     header .master_play{
-        z-index: 999;
+        z-index: 999 !important;
     }
     header .master_play .icon {
         position: absolute;
