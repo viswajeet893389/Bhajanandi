@@ -662,6 +662,7 @@ header .song_side .content #Kirtaniya {
   position: relative;
   top: -15px;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -676,8 +677,10 @@ header .song_side .content .subtitle{
 header .song_side .content .buttons {
   margin-top: 15px;
   visibility: visible;
-  position: realtive;
-  top: -15px;
+  /* position: relative;
+  top: -12px; */
+  /* position: fixed;
+  top: 23%; */
 }
 header .song_side .content .buttons button{
   width: 130px;
