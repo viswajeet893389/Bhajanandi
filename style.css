@@ -44,7 +44,7 @@ header .master_play{
   /* border: 1px solid #fff; */
   background: #0b1320;
   box-shadow: 0px 3px 8px #090f1f;
-  z-index: 1000000000;
+  z-index: 100000;
 }
 
 
@@ -666,7 +666,7 @@ header .song_side .content #Kirtaniya {
 }
 
 header .song_side .content .subtitle{
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   color: #798298;
   margin: 5px;
