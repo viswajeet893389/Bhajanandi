@@ -71,6 +71,9 @@ header .menu_side .playlist h4{
   align-items: center;
   transition: 0.3s linear;
 }
+header .menu_side .playlist h4 .recommended{
+  color: #fff !important;
+}
 header .menu_side .playlist h4:hover{
   color: #fff;
 }
@@ -597,7 +600,7 @@ header .song_side nav .search .search_results img{
   margin-right: 3px;
 }
 
-header .song_side nav .search .search_results .card .content{
+header .song_side nav .search .search_results .card .search_content{
   width: 80%;
   height: 100%;
   /* border: 1px solid #fff; */
@@ -609,7 +612,7 @@ header .song_side nav .search .search_results .card .content{
 
 }
 
-header .song_side nav .search .search_results .card .content .subtitle{
+header .song_side nav .search .search_results .card .search_content .subtitle{
   font-size: 11px;
   color: #798298;
   font-weight: 500;
