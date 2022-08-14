@@ -612,6 +612,7 @@ const artists_object = Object.assign(filtered);
  let tracks = document.querySelector('.tracks');
  
  //creating a list or generating Html
+ 
  for (let i = 0; i < artists_object.length; i++) {
 
    let Html = ` <div class="song songItem">
@@ -625,17 +626,26 @@ const artists_object = Object.assign(filtered);
        </div>
 
        <span id="play_btn">
-       <i class="Like bi bi-heart ${artists_object[i].id}"></i>
-       <i class="bi playListPlay bi-play-circle-fill" id= "${artists_object[i].id}"></i></span>
+       <i class="Like first bi bi-heart ${artists_object[i].id}"></i>
+       <i class="bi playListPlay bi-play-circle-fill" id= "${artists_object[i].id}"></i>
+       <div class="dropdown-container" tabindex="-1">
+       <div class="three-dots"></div>
+       <div class="dropdown">
+        <div><i class="Like second bi bi-heart ${artists_object[i].id}"></i> Favourite</div>
+    </div>
+  </div></span>
        </div>
      </div>`;
    tracks.insertAdjacentHTML("beforeend", Html);
  };
+
+
+
  
 
  /*please follow all the rules so that you do not face any problem*/
 
- let index;
+ let index = 0;
 
 var rand_arr = [];
 while(rand_arr.length < 8){
@@ -1097,7 +1107,13 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((el) => {
     el.style.fontSize = "22px";
     });
 
+let play_btn = document.getElementById('play_btn');
+play_btn.addEventListener('click', ()=> {
+    play_btn.style.backgroundColor = "rgba(255,255,255,0)";
+    play_btn.style.backgroundRepeat = "no-repeat";
+    play_btn.style.border = "none";
 
+});
 
 
 

@@ -21,8 +21,8 @@ header .song_side .content #Artists_img{
 header .song_side .content #Artists_name{
   margin-left: 40px;
   font-size: 40px;
+  overflow-wrap: break-word;
 }
-
   .PlayListBody{
 	display: grid;
 	place-items: center;
@@ -106,12 +106,9 @@ header .song_side .content #Artists_name{
   background: none;
   color: #fff;
   margin-right: 20px;
-  /* box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
-			inset -5px -5px 15px rgba(255,255,255,0.1),
-			-5px -5px 15px rgba(255,255,255,0.1); */
 }
 
-.tracks .song .Like{
+.tracks .song .first{
   position: relative;
   right: 100px;
   font-size: 20px;
@@ -142,14 +139,17 @@ header .song_side .content #Artists_name{
 }
 
 .tracks .song #artists_title{
-  max-width: 100%;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;           /* Hare Kris... when overflow */
+  text-overflow: ellipsis;  /* Hare Kris... when overflow */
+  font-size: 16px;  
+  margin-bottom: 4px;       
 }
 
 .tracks .song_info .subtitle{
-  display: none;
+  color: #8a898e;
+  font-size: 12px;
 }
 
 header .menu_side .menu_song li:hover{
@@ -158,4 +158,56 @@ header .menu_side .menu_song li:hover{
 
 .song .more #play_btn .playListPlay{
   font-size: 22px !important;
+}
+
+span:active, span:focus {
+  outline: none !important;
+  border: none !important;        
+  text-decoration: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none;
+}
+.dropdown-container{
+  display: none;
+}
+.three-dots:after {
+  cursor: pointer;
+  color: #5c5b61;;
+  content: '\2807';
+  font-size: 20px;
+  padding: 0 0 0 15px;
+}
+
+.dropdown div{
+  padding: 5px 5px;
+}
+.dropdown .second{
+  margin-right: 10px;
+}
+
+.dropdown {
+  position: absolute;
+  right: 10%;
+  background-color: #111727;
+  box-shadow: 0px 0px 3px 3px #090f1f;
+  outline: none;
+  opacity: 0;
+  z-index: -1;
+  max-height: 0;
+  transition: opacity 0.1s;
+}
+
+.dropdown-container:focus {
+  outline: none;
+}
+
+.dropdown-container:focus .dropdown {
+  opacity: 1;
+  z-index: 100;
+  max-height: 100vh;
+  transition: opacity 0.2s;
 }
