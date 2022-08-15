@@ -11,6 +11,11 @@
     header .song_side nav .search .search_results{
         background: #0c111f;
         }
+    header .song_side .content #Artists_name{
+        visibility: hidden !important;
+        transition: none !important;
+          }
+          
 
 }
 
@@ -57,8 +62,12 @@
         padding: 1px 4px;
       }
       .PlayListBody{
-        position: absolute;
-        top: 35% !important;
+        position: relative;
+        top: 10% !important;
+      }
+      .tracks .song .first{
+        position: relative;
+        right: 80px !important;
       }
 }
 
@@ -133,6 +142,10 @@
         header .song_side .content #Artists_name{
             width: 100%;
           }
+          .PlayListBody {
+            position: absolute;
+            top: 30% !important;
+        }
 }
 @media screen and (max-width: 680px){
     header{
@@ -232,6 +245,9 @@
     .tracks .song .first{
        display: none;
       }
+      .tracks .song_info{
+        width: calc(100% - 90px);
+      }
 
       .tracks .song .dropdown-container{
         display: block;
@@ -302,7 +318,7 @@
         display: block;
         position: absolute;
         top: 26%;
-        font-size: 30px;
+        font-size: 27px;
         margin-left: auto; 
         margin-right: auto; 
         width: 95% !important;
@@ -311,7 +327,7 @@
         height: 57%;
         width: 100%;
         position: absolute;
-        top: 34% !important;
+        top: 33% !important;
     }
 
 }
@@ -319,7 +335,6 @@
 @media screen and (max-width: 460px){
     
    .tracks .song #artists_title{
-    width: auto;
     font-size: 15px;
    }
 

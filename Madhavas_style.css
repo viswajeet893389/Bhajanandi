@@ -5,6 +5,9 @@ header .song_side{
   background-image: linear-gradient(to right, #111727 ,#0b1736);
   
 }
+header .menu_side .playListPlay{
+  font-size: 16px !important;
+}
 header .song_side .content{
   display: flex !important;
   align-items: center;
@@ -146,7 +149,15 @@ header .song_side .content #Artists_name{
   font-size: 16px;  
   margin-bottom: 4px;       
 }
-
+.tracks .song_info{
+  padding-left: 0;
+  padding-right: 7px;
+  width: calc(90% - 90px);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .tracks .song_info .subtitle{
   color: #8a898e;
   font-size: 12px;
@@ -174,37 +185,45 @@ span:active, span:focus {
 .dropdown-container{
   display: none;
 }
-.three-dots:after {
+.three-dots::after {
   cursor: pointer;
-  color: #5c5b61;;
+  color: #5c5b61;
   content: '\2807';
   font-size: 20px;
   padding: 0 0 0 15px;
 }
 
-.dropdown div{
-  padding: 5px 5px;
-}
-.dropdown .second{
-  margin-right: 10px;
-}
-
 .dropdown {
-  position: absolute;
-  right: 10%;
-  background-color: #111727;
-  box-shadow: 0px 0px 3px 3px #090f1f;
+  display: block;
   outline: none;
   opacity: 0;
   z-index: -1;
   max-height: 0;
   transition: opacity 0.1s;
+
+}
+
+.dropdown div{
+  display: flex !important;
+  position: relative;
+  top: -9px;
+  left: 7px;
+  padding: 4px 4px;
+  align-items: center;
+  text-align: center;
+  
+
+}
+.dropdown .second{
+  font-size: 23px;
 }
 
 .dropdown-container:focus {
   outline: none;
 }
-
+.dropdown-container:focus .three-dots::after{
+  content:'';
+}
 .dropdown-container:focus .dropdown {
   opacity: 1;
   z-index: 100;

@@ -631,9 +631,9 @@ const artists_object = Object.assign(filtered);
        <div class="dropdown-container" tabindex="-1">
        <div class="three-dots"></div>
        <div class="dropdown">
-        <div><i class="Like second bi bi-heart ${artists_object[i].id}"></i> Favourite</div>
+        <div><i class="Like second bi bi-heart ${artists_object[i].id}"></i></div>
     </div>
-  </div></span>
+        </div></span>
        </div>
      </div>`;
    tracks.insertAdjacentHTML("beforeend", Html);
@@ -684,6 +684,7 @@ index = rand_arr[0];
 const music =  new Audio(songs[0].songSrc);
 document.getElementById('poster_master_play').src = songs[0].poster;  
 document.getElementById('title').innerHTML = songs[0].songName;
+
 
 
 //search data start
@@ -1114,7 +1115,6 @@ play_btn.addEventListener('click', ()=> {
     play_btn.style.border = "none";
 
 });
-
 
 
 
